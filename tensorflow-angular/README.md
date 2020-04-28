@@ -1,4 +1,6 @@
-# TensorflowAngular
+# TensorFlow - Angular
+
+This is a Proof of Concept of using tensorflow.js into an Angular project. It contains some simple examples of tf.Variables for linear and polynomial regressions, as well as a tf.Sequential model with just one perceptron to simulate simple logic gates.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
