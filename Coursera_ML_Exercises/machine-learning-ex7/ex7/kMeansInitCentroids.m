@@ -13,12 +13,11 @@ centroids = zeros(K, size(X, 2));
 %               the dataset X
 %
 
+  %rand_vals = randi(size(X, 1), K, 1);
+  %centroids = X(rand_vals,:);
 
-
-
-
-
-
+  randidx = randperm(size(X, 1));
+  centroids = X(randidx(1:K), :);
 
 % =============================================================
 

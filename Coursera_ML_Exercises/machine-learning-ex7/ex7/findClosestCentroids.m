@@ -20,12 +20,14 @@ idx = zeros(size(X,1), 1);
 %
 % Note: You can use a for-loop over the examples to compute this.
 %
+  
+  dist = zeros(size(X,1), K);
 
-
-
-
-
-
+  for i = 1:K
+    dist(:,i) = sum((X .-centroids(i,:)).^2,2);
+  endfor
+  
+  [min_dist, idx] = min(dist,[],2);
 
 % =============================================================
 
